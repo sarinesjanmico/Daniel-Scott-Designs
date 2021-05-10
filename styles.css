@@ -1,0 +1,202 @@
+/* Global View */
+body {
+    font-family:'Asap', sans-serif;
+    background-color: #EBEBEB;
+}
+
+.container {
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding-top: 150px;
+}
+
+img {
+    justify-content: center;
+}
+
+.header-container {
+    background-color: rgb(47, 47, 47);
+    min-height: 100px;
+    margin-bottom: 50px;
+    position: fixed;
+    width: 100%;
+
+}
+
+header {
+    max-width: 1024px;
+    min-height: 100px;
+    justify-content: center;
+    margin: auto auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div span {
+    font-weight: 700;
+}
+
+.navbaritem{
+    color: white;
+    border: 1px solid white;
+    padding: 8px 25px;
+    text-decoration: none;
+    margin-left: 15px;  
+}
+
+
+.col {
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: rgb(0, 255, 213);
+}
+
+.col p {
+    color: white;
+    font-size: 0.875rem;
+    padding: 20px 30px;
+    line-height: 1.25rem;
+}
+
+
+
+.hide-desktop-only {
+    display: none;
+}
+
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+.col p::first-line {
+  font-weight: bold;  
+}
+
+.mob-wrapper {
+    display: none;
+}
+
+
+
+/* Tablet View */
+@media (max-width: 768px) {
+
+.col {
+    width: 45%;
+}    
+
+.hide-desktop-only {
+    display: block;
+}
+  
+
+.header-container {
+    position: relative;
+}
+
+.container {
+    padding-top: 0px;
+}
+
+.navbutton{
+    display: none;
+}
+
+.navbutton a {
+    display: block;
+    margin-left: 0;
+}
+
+.logo {
+   padding: 40px 20px;
+}
+
+.mob-wrapper {
+    display: block;
+    padding-right: 30px;
+}
+
+.mob-nav {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+}
+
+.navbaritem {
+    display: block;
+    background-color: rgb(255, 208, 100);
+    padding: 15px 30px;
+    margin-left: -70px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+}
+
+/* Mobile View */
+@media (max-width: 500px) {
+   
+.col {
+    width: 100%;
+}    
+   
+.hide-mobile {
+    display: none;
+}
+
+header {
+    display: block;
+    text-align: center;
+}
+
+
+.header-container {
+    position: relative;
+}
+
+.container {
+    padding-top: 0px;
+    margin-top: -500;
+}
+
+.navbutton a {
+    display: block;
+    margin-left: 0;
+}
+
+.logo {
+   padding: 0px 20px;
+   padding-top:20px;
+   
+}
+
+
+
+.mob-nav {
+   margin-top: -30px;
+}
+
+.burgermenu {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-left: 30px;
+ 
+}
+
+.navbaritem {
+    margin-left: 95px;
+  
+
+}
+
+
+}
